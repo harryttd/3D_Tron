@@ -2,7 +2,7 @@
 This is 3D multiplayer version of the classic Tron game where players compete to be the last rider standing.
 
 ## Live Game
-To play a live version of this game please click here http://3d-tron.com.
+To play a live version of this game please click here http://tron-3d.herokuapp.com.
 
 ## Game Play Design
 3D Tron is a fan variant of the classic Tron game, where players guide a Light Cycle in an arena against opponents, while avoiding the walls and trails of light left behind by all Light Cycles. The players must maneuver quickly and precisely in order to force opponents to run into walls or trails of light.
