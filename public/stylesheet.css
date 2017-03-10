@@ -15,6 +15,7 @@ button:focus {
 
 #title {
   color: white;
+  text-align: center;
   font-family: "Quicksand", sans-serif;
   font-weight: lighter;
   font-size: 7vw;
