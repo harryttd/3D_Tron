@@ -22,9 +22,11 @@ export const initializeSocket = () => {
 
   socket.on('addUser', (allUsers) => {
     store.dispatch(setPlayerId(allUsers));
-    const myUser = allUsers.find(user => user.id === localStorage.getItem('mySocketId'));
-    const myBike = allBikes.find(bike => bike.id === myUser.id);
-    store.dispatch(setMainPlayer(myBike));
+    if (!store.getState().mainPlayer.id) {
+      const myUser = allUsers.find(user => user.id === localStorage.getItem('mySocketId'));
+      const myBike = allBikes.find(bike => bike.id === myUser.id);
+      store.dispatch(setMainPlayer(myBike));
+    }
   });
 
   socket.on('addPlayerName', (socketId, playerName) => {
